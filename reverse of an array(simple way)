@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        int j=0;
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int a[]=new int[n];
+        int rev[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=in.nextInt();
+        }
+        System.out.println("the reverse of an array is");
+        for(int i=n;i>0;i--,j++){
+            rev[j]=a[i-1];
+            System.out.print(""+rev[j]);
+        }
+    }
+}
