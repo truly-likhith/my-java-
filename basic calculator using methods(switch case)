@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner in = new Scanner (System.in);
+    int a = in.nextInt ();
+    int b = in.nextInt ();
+    char option = in.next ().charAt (0);
+     int m = cal (a, b, option);
+     System.out.println(""+m);
+
+  }
+  public static int cal (int a, int b, char option)
+  {
+    int r=0;
+    switch (option)
+      {
+      case '+':
+	r = a + b;
+	break;
+      case '-':
+	r = a - b;
+	break;
+      case '*':
+	r = a * b;
+	break;
+      case '/':
+	r = a / b;
+	break;
+
+      }
+      return r;
+
+  }
+
+
+}
+
